@@ -12,9 +12,9 @@ body {
 }
 
 #typewriter {
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin: 0;
-  font-family: "Courier New";
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
 }
 #typewriter:after {
   content: "|";

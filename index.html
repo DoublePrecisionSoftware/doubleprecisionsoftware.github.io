@@ -10,14 +10,17 @@
 </head>
 <body>
     <pre id="typewriter">
-        <span class="var-highlight">const</span> organization = {
-            name: <a href="http://github.com/DoublePrecisionSoftware/" class="string-highlight">'Double Precision Software'</a>,
-            type: <span class="string-highlight">'Contract Development'</span>,
-            location: <span class="string-highlight">'Jacksonville, FL'</span>,
-            specialties:[<span class="string-highlight">'.NET'</span>,
-                        <span class="string-highlight">'React.js'</span>,
-                        <span class="string-highlight">'Node.js'</span>];
-        }; </pre>
+<span class="var-highlight">using</span> Precision;
+
+<span class="var-highlight">var</span> org = new Company {
+    name: <a href="http://github.com/DoublePrecisionSoftware/" class="string-highlight">'Double Precision Software'</a>,
+    type: <span class="string-highlight">'Contract Development'</span>,
+    location: <span class="string-highlight">'Jacksonville, FL'</span>,
+    email: <a href="mailto:sgcollins@doubleprecision.software" class="string-highlight">'sgcollins@doubleprecision.software'</a>,
+    specialties:[<span class="string-highlight">'.NET'</span>,
+                <span class="string-highlight">'React.js'</span>,
+                <span class="string-highlight">'Node.js'</span>],
+    }; </pre>
     <script src="./main.js"></script>
 </body>
 </html>
