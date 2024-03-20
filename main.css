@@ -1,8 +1,19 @@
 body {
-  background: rgb(51, 51, 51);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
   color: #fff;
-  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+    sans-serif;
   font-size: calc(100vh / 17);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  body {
+    font-size: calc(100vw / 30);
+  }
 }
 
 pre {
@@ -10,8 +21,19 @@ pre {
   margin: 0;
 }
 
+#logo {
+  height: 10vh;
+  width: 10vh;
+  background: linear-gradient(rgba(25, 25, 25, 0.75), rgba(25, 25, 25, 0.75)), url('/logo.png');
+  background-size: contain;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+}
+
 .var-highlight {
-  color: #C0AD60;
+  color: #c0ad60;
 }
 
 .string-highlight {
@@ -25,7 +47,7 @@ pre {
 #typewriter:after {
   content: "|";
   -webkit-animation: blink 500ms linear infinite alternate;
-          animation: blink 500ms linear infinite alternate;
+  animation: blink 500ms linear infinite alternate;
 }
 
 @-webkit-keyframes blink {
